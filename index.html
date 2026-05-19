@@ -2,315 +2,1101 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 <body>
     <style>
-  body{
-    background-color: rgb(75, 25, 25);
-    margin: 0 ;
-  }
-  .a{
-    color: red;
-    font-size: 20px;
-    font-family: sans-serif;
-    position: absolute;
-    top: 60px;
-    left: 10px;
-  }
-  .line{
-    background-color: red;
-    width: 80px;
-    height: 2px;
-    position: absolute;
-    top: 90px;
-    left: 10px;
-  }
-  
-  .b{
-    color: red;
-    font-size: 20px;
-    font-family: sans-serif;
-    position: absolute;
-    top: 60px;
-    left: 370px;
-  }
-  .lineno2{
-    background-color: red;
-    width: 80px;
-    height: 2px;
-    position: absolute;
-    top: 90px;
-    left: 370px;
-    
-  }
-  .c{
-     color: red;
-    font-size: 20px;
-    font-family: sans-serif;
-    position: absolute;
-    top: 60px;
-    left: 700px;
-  }
-  .lineno3{
-    background-color: red;
-    width: 80px;
-    height: 2px;
-    position: absolute;
-    top: 90px;
-    left: 700px;
-  }
-   .d{
-    color: white;
-    font-size: 16px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    position: absolute;
-    top: 90px;
-    left: 10px;
-    transition: 2s;
-   }
-   .d:hover{
-    background-color: red;
-    transform: translateY(-10deg);
-   }
-  .e{
-    color: white;
-    font-size: 16px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    position: absolute;
-    top: 105px;
-    left: 370px;
-    transition: 2s;
-  }
-  .e:hover{
-    background-color: red;
-    transform: translateY(-10deg);
-  }
-.f{
-    color: white;
-    font-size: 16px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    position: absolute;
-    top: 133px;
-    left: 370px;
-    transition: 2s;
-}
-.f:hover{
-    background-color: red;
-    transform: translateY(-10deg);
-  }
-.g{
-    color: white;
-    font-size: 16px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    position: absolute;
-    top: 160px;
-    left: 370px;
-    transition: 2s;
-}
-.g:hover{
-    background-color: red;
-    transform: translateY(-10deg);
-}
-.h{
-    color: white;
-    font-size: 16px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    position: absolute;
-    top: 188px;
-    left: 370px;
-    transition: 2s;
-}
-.h:hover{
-    background-color: red;
-    transform: translateY(-10deg);
-}
-.i{
-    color: white;
-    font-size: 16px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    position: absolute;
-    top: 105px;
-    left: 705px;
-    transition: 2s;
-}
-.i:hover{
-    background-color: red;
-    transform: translateY(-10deg);
+        body{
+            background-color: black;
+            transition:  background 2s;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+           
+        }
+        
+     
+        nav,ul,li,a{
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(0, 0, 0);
+            gap: 30px;
+            list-style: none;
+            height: 90px;
+            align-items: center;
+            color: goldenrod;
+            font-size: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 900;
+            z-index: 999;
+            color: gray;
+        }
+        h1{
+          color: rgba(240, 248, 255, 0.715);
+        }
+        
+        .btn{
+            width: 180px;
+            height: 30px;
+            font-size: 13px;
+            position: absolute;
+            top: 130px;
+            left: 30px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            border-radius: 30px;
+            border: 1px solid rgba(255, 217, 0, 0.556);
+         background: linear-gradient(90deg,rgb(133, 112, 20),rgba(0, 0, 0, 0.72));
+         color: gold;
+        }
+       
+        h2{
+            border-radius: 2px solid gold;
+            color: aliceblue;
+            position: absolute;
+            top: 160px;
+            left: 30px;
+            font-size: 38px;
+            width: 0;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: 4s box steps(30) forwards,blink 0.3s linear infinite;
+        }
+        @keyframes box{
+            from{width: 0;}
+            to{width: 990px;}
+        }
+        @keyframes  blink {
+            from{border-color: wheat;}
+            to{border-color: orange;}
+        }
+        p{
+            font-size: 15px;
+            font-family: sans-serif;
+            color: white;
+            position: absolute;
+            top: 240px;
+            left: 30px;
+        }
+        .down{
+           background-color: gold;
+           height: 36px;
+           width: 130px;
+           color:black;
+           font-size: 19px;
+           font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+         text-align: center;
+         justify-content: center;
+           border-radius: 10px;
+           position: absolute;
+           top: 340px;
+           left: 30px;
+           border: 1px solid orange;
+           transition: 1s ;
+        }
+        .down:hover{
+            transform: translateY(-10px);
+        }
+      /* .hire{
+        width: 70px;
+        height: 40px;
+        font-size: 11px;
+        color: aliceblue;
+        background: transparent;
+        border-radius: 10px;
+        position: absolute;
+        left: 180px;
+        top: 340px;
+        border: 1px solid rgb(181, 170, 103);
+      } */
+      /* From Uiverse.io by TISEPSE */ 
+/* From Uiverse.io by TISEPSE */ 
+/* From Uiverse.io by WhiteNervosa */ 
+.hire {
+  font-size: 18px;
+  color: #e1e1e1;
+  font-family: inherit;
+  font-weight: 800;
+  cursor: pointer;
+ position: absolute;
+ top: 340px;
+ left: 190px;
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
 }
 
-.j{
-    color: white;
-    font-size: 16px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    position: absolute;
-    top: 135px;
-    left: 705px;
-    transition: 2s;
-}
-.j:hover{
-    background-color: red;
-    transform: translateY(-10deg);
+.hire:focus,
+.hire:hover {
+  color: rgb(170, 130, 11);
 }
 
-.K{
-    color: rgb(255, 255, 255);
-    font-size: 16px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    position: absolute;
-    top: 164px;
-    left: 705px;
- transition: 2s;
-}
-.K:hover{
-  background-color: red;
-  transform: translateY(-10deg);
+.hire:focus:after,
+.hire:hover:after {
+  width: 100%;
+  left: 0%;
 }
 
-.l{
-    color: white;
-    font-size: 16px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    position: absolute;
-    top: 193px;
-    left: 705px;
-    transition: 2s;
-}
-.l:hover{
-  background-color: red;
-  transform: translateY(-10deg);
-}
-
-
-.m{
-    color: white;
-    font-size: 16px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    position: absolute;
-    top: 220px;
-    left: 705px;
-    transition: 2s;
-}
-.m:hover{
-  background-color: red;
-  transform: translateY(-10deg);
-}
-.n{
-    
-    color: red;
-    font-size: 20px;
-    font-family:  sans-serif;
-    position: absolute;
-    top: 400px;
-    left: 10px;
-}
-.lineno4{
-  background-color: red;
-  width: 80px;
-   height: 2px;
+.hire:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
   position: absolute;
-  top: 430px;
-  left: 10px;
+  width: 0%;
+  height: 2px;
+  background-color: rgb(242, 209, 80);
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
 
-}
-.o{
+#changebk{
+  width: 240px;
+  height: 40px;
   color: white;
-    font-size: 16px;
-    font-family:  sans-serif;
-    position: absolute;
-    top: 450px;
-    left: 10px;
-    transition: 0.5s;
+  border-radius: 20px;
+  background: transparent;
+  position: absolute;
+  left: 670px;
+  top: 120px;
+   border: 1px solid rgba(255, 217, 0, 0.556);
+         background:transparent;
 }
-.o:hover{
-  background-color: red;
-  transform: translateY(-10deg);
+ 
+
+
+
+      h3{
+        font-size: 24px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: white;
+        position: absolute;
+        top: 380px;
+        left: 30px;
+      }
+      .line{
+        width: 70px;
+        height: 5px;
+        background-color: gold;
+        border-radius: 20px;
+        position: absolute;
+        top: 440px;
+        left: 30px;
+      }
+      .ht{
+        color: aliceblue;
+        font-size: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        position: absolute;
+        top: 480px;
+        left: 30px;
+      }
+      .load{
+        width: 250px;
+        height: 8px;
+        border-radius: 10px;
+        background-color: rgb(37, 36, 36);
+        position: absolute;
+        left: 30px;
+        top: 520px;
+        margin: 0;
+      }
+      .zzz{
+        height: 100%;
+        width: 0;
+        background: linear-gradient(orange , gray);
+        border-radius: 20px;
+        animation: in 1s linear forwards;
+
+      }
+      @keyframes in {
+        from{width: 0;}
+        to{width: 80%;}
+      }
+      .cs{
+        color: aliceblue;
+        font-size: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        position: absolute;
+        top: 480px;
+        left: 340px;
+      }
+      .hey{
+        width: 250px;
+        height: 8px;
+        border-radius: 10px;
+        background-color: rgb(37, 36, 36);
+        position: absolute;
+        left: 340px;
+        top: 520px;
+        margin: 0;
+      }
+      .bbb{
+        height: 100%;
+        width: 0;
+        background: linear-gradient(orange , gray);
+        border-radius: 20px;
+        animation: out 1s linear forwards;
+
+      }
+      @keyframes out {
+        from{width: 0;}
+        to{width: 80%;}
+      }
+      .js{
+        color: aliceblue;
+        font-size: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        position: absolute;
+        top: 570px;
+        left: 30px;
+      }
+      .hello{
+        width: 250px;
+        height: 8px;
+        border-radius: 10px;
+        background-color: rgb(37, 36, 36);
+        position: absolute;
+        left: 30px;
+        top: 620px;
+        margin: 0;
+      }
+      .ccc{
+        height: 100%;
+        width: 0;
+        background: linear-gradient(orange , gray);
+        border-radius: 20px;
+        animation: movi 1s linear forwards;
+
+      }
+      @keyframes movi{
+        from{width: 0;}
+        to{width: 80%;}
+      }
+       .des{
+        color: aliceblue;
+        font-size: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        position: absolute;
+        top: 570px;
+        left: 340px;
+       }
+       .bye{
+        width: 250px;
+        height: 8px;
+        border-radius: 10px;
+        background-color: rgb(37, 36, 36);
+        position: absolute;
+        left: 340px;
+        top: 620px;
+        margin: 0;
+      }
+      .eff{
+        height: 100%;
+        width: 0;
+        background: linear-gradient(orange , gray);
+        border-radius: 20px;
+        animation: zoo 1s linear forwards;
+      }
+      @keyframes zoo{
+        from{width: 0;}
+        to{width: 90%;}
+      }
+      .box{
+        background-color: rgb(27, 21, 6);
+        width: 350px;
+        height: 320px;
+        position: absolute;
+        left: 630px;
+        top: 180px;
+        border-radius: 20px;
+
+      }
+      .expr{
+        font-size: 15px;
+     color: rgba(240, 248, 255, 0.564);
+        position: absolute;
+        top: 260px;
+        left: 10px;
+      }
+     .year{
+        font-size: 15px;
+      color: rgba(240, 248, 255, 0.564);
+        position: absolute;
+         top: 285px;
+         left: 20px;
+     }
+     .loc{
+      font-size: 15px;
+        color: rgba(240, 248, 255, 0.564);
+        position: absolute;
+        top: 260px;
+        left: 240px;
+     }
+     .kara{
+       font-size: 13px;
+        color: rgba(240, 248, 255, 0.564);
+        position: absolute;
+        top: 25px;
+        left: 10px;
+     }
+     .png{
+    background: url(https://static.vecteezy.com/system/resources/previews/030/565/050/large_2x/ai-generative-an-attractive-office-girl-smiles-at-the-camera-while-working-free-photo.JPG);
+    background-size: 100%;
+      width: 340px;
+      height: 240px;
+      position: absolute;
+      top: 10px;
+      border-radius: 20px;
+
+     }
+    section{
+      height: 100vh;
+    }
+     nav{
+      position: sticky;
+      top: 0;
+     }
+     html{
+      scroll-behavior: smooth;
+     }
+     .web{
+        background: url(https://computercollegiate.com.pk/wp-content/uploads/2024/04/GetPaidStock.com-631c5f362171d-770x400-1.jpg);
+        background-size: 100% 100%;
+        width: 300px;
+        height: 300px;
+        border-radius: 20px;
+        position: absolute;
+        left: 10px;        
+        top: 790px;
+        transition: 1s;
+      }
+      .web:hover{
+        transform: translateY(-10px);
+      }
+      .develop{
+         background: url(https://images.ctfassets.net/23aumh6u8s0i/5gieAxw4n3rxYsyjaAnhGm/aa67599b991ad67b3241bf730fc2a131/security_programming_hero.jpg);
+         background-size: 100% 100%;
+         width: 290px;
+         height: 280px;
+         position: absolute;
+         left: 320px;
+         top: 120px;
+         border-radius: 20px;
+         transition: 1s;
+      }
+      .develop:hover{
+        transform: translateY(-10px);
+      }
+      .ment{
+        background: url(https://t4.ftcdn.net/jpg/02/83/46/33/360_F_283463385_mfnrx6RPU3BqObhVuVjYZjeZ5pegE7xq.jpg);
+        background-size: 100% 100%;
+        width: 300px;
+        height: 290px;
+        position: absolute;
+        left: 640px;
+        border-radius: 20px;
+         transition: 1s;
+      }
+      .ment:hover{
+        transform: translateY(-10px);
+      }
+      .person{
+        background: url(https://media.istockphoto.com/id/1503858430/vector/website-software-development-concept-web-design-site-and-mobile-app-on-laptop-testing-on.jpg?s=612x612&w=0&k=20&c=k8ckKsgOrPPxohAA_ywg2VXZzdCPptEbOlleRV8Kb7c=);
+        background-size: 100% 100%;
+        width: 300px;
+        height: 270px;
+        position: absolute;
+        left: 640px;
+        top: 320px;
+        border-radius: 20px;
+        transition: 1s;
+      }
+      .person:hover{
+             transform: translateY(-10px);
+      }
+      .dairy{
+        width: 1050px;
+        height: 240px;
+       background: transparent;
+       border-radius: 20px;
+       position: absolute;
+       top: 1400px;
+       left: 20px;
+        border: 2px solid rgba(22, 19, 19, 0.768);
+      }
+      .parag{
+        color: aliceblue;
+       font-size: 19px;
+        position: absolute;
+        top: 1400px;
+        left: 40px;
+         font-size: 38px;
+        }
+        
+     .h1{
+      color: aliceblue;
+      font-size: 20px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      position: absolute;
+      top: 2220px;
+      left: 30px;
+     }
+     .width{
+     background: linear-gradient(90deg,gold,black);
+      height: 5px;
+      width: 90px;
+      border-radius: 20px;
+      /* position: absolute;
+      top: 70px; */
+     }
+     .card{
+      color: aliceblue;
+      font-size: 15px;
+      font-family: sans-serif;
+      position: absolute;
+      top: 2290px;
+      left: 20px;
+     }
+     .a{
+      background-color: rgb(21, 10, 2);
+      width: 310px;
+      height: 200px;
+      position: absolute;
+      left: 30px;
+      top: 2390px;
+      border-radius: 20px ;
+     }
+     .shop{
+      color: aliceblue;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 20px;
+      position: absolute;
+      top: 30px;
+      left: 30px;
+     }
+     .lux{
+       color: aliceblue;
+      font-family: sans-serif;
+      font-size: 15px;
+      position: absolute;
+      top: 70px;
+      left: 30px;
+     }
+     .html{
+      width: 170px;
+      height: 30px;
+      color: rgba(240, 248, 255, 0.491);
+      background: transparent;
+      border: 2px solid rgba(255, 255, 255, 0.477);
+      border-radius: 20px;
+      position: absolute;
+      top: 150px;
+      left: 40px;
+
+     }
+     .b{
+       background-color: rgb(21, 10, 2);
+      width: 310px;
+      height: 200px;
+      position: absolute;
+      left: 370px;
+      top: 2390px;
+      border-radius: 20px ;
+     }
+     .gall{
+       color: aliceblue;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 20px;
+      position: absolute;
+      top: 30px;
+      left: 30px;
+     }
+     .hover{
+       color: aliceblue;
+      font-family: sans-serif;
+      font-size: 15px;
+      position: absolute;
+      top: 70px;
+      left: 30px;
+     }
+     .css{
+       width: 170px;
+      height: 30px;
+      color: rgba(240, 248, 255, 0.491);
+      background: transparent;
+      border: 2px solid rgba(255, 255, 255, 0.477);
+      border-radius: 20px;
+      position: absolute;
+      top: 150px;
+      left: 40px;
+     }
+     
+    
+     /* .c{
+       background-color: rgb(21, 10, 2);
+      width: 310px;
+      height: 200px;
+      position: absolute;
+      left: 370px;
+      top: 2510px;
+      border-radius: 20px;
+    }  */
+   
+    .d{
+      background-color: rgb(21, 10, 2);
+      width: 310px;
+      height: 200px;
+      position: absolute;
+      left: 700px;
+      top: 2390px;
+      border-radius: 20px ;
+    }
+     .skill{
+      color: aliceblue;
+       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 20px;
+      position: absolute;
+      top: 30px;
+      left: 90px;
+    }
+    .dn{
+       color: aliceblue;
+      font-family: sans-serif;
+      font-size: 15px;
+      position: absolute;
+      top: 70px;
+      left: 30px;
+    }
+    .jss{
+       width: 170px;
+      height: 30px;
+      color: rgba(240, 248, 255, 0.491);
+      background: transparent;
+      border: 2px solid rgba(255, 255, 255, 0.477);
+      border-radius: 20px;
+      position: absolute;
+      top: 150px;
+      left: 40px;
+    }
+    
+
+
+    .e{
+      background-color: rgb(21, 10, 2);
+      width: 310px;
+      height: 200px;
+      position: absolute;
+      left: 30px;
+      top: 2600px;
+      border-radius: 20px ;
+    }
+
+   .utl{
+     color: aliceblue;
+       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 20px;
+      position: absolute;
+      top: 30px;
+      left: 90px;
+   }
+   .coll{
+ color: aliceblue;
+      font-family: sans-serif;
+      font-size: 15px;
+      position: absolute;
+      top: 70px;
+      left: 30px;
+   }
+   .php{
+     width: 170px;
+      height: 30px;
+      color: rgba(240, 248, 255, 0.491);
+      background: transparent;
+      border: 2px solid rgba(255, 255, 255, 0.477);
+      border-radius: 20px;
+      position: absolute;
+      top: 150px;
+      left: 40px;
+   }
+
+   .f{
+       background-color: rgb(21, 10, 2);
+      width: 310px;
+      height: 200px;
+      position: absolute;
+      left: 370px;
+      top: 2600px;
+      border-radius: 20px ;
+   }
+   .land{
+    color: aliceblue;
+       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 20px;
+      position: absolute;
+      top: 30px;
+      left: 90px;
+   }
+   .page{
+      color: aliceblue;
+      font-family: sans-serif;
+      font-size: 15px;
+      position: absolute;
+      top: 70px;
+      left: 30px;
+   }
+   .net{
+    width: 170px;
+      height: 30px;
+      color: rgba(240, 248, 255, 0.491);
+      background: transparent;
+      border: 2px solid rgba(255, 255, 255, 0.477);
+      border-radius: 20px;
+      position: absolute;
+      top: 150px;
+      left: 40px;
+   }
+
+
+ .cont{
+  background: transparent;
+  border:  2px solid rgb(40, 68, 82);
+  border-radius: 30px;
+  position: absolute;
+  top: 3260px;
+  left: 190px;
+  width: 700px;
+  height: 500px;
+  box-shadow: 2px 2px 5px 3px  rgb(40, 68, 83);
+}
+ .contact{
+  color: aliceblue;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  top: 10px;
+  left: 250px ;
+ 
+ }
+.input-group{
+  margin: 20px 0;
+  position: relative;
+  top: 50px;
+  left: 40px;
+}
+.input-group label{
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  left: 15px;
+  font-size: 15px;
+  pointer-events: none;
+  color: wheat;
+  padding: 0 50px;
+transition: .5s;
+}
+.input-group input{
+  width: 360px;
+  height: 60px;
+color: aliceblue;
+font-size: 16px;
+padding: 0 15px;
+border: 1.2px solid pink;
+background: transparent;
+outline: none;
+border-radius: 5px;
+}
+.input-group input:focus~label,
+.input-group input:valid~label {
+      top: 0;
+      background: rgb(75, 160, 217);
+      font-size: 16px;
+}
+
+
+.number{
+  color: aliceblue;
+  position: absolute;
+  top: 70px;
+  left: 510px;
+}
+.addr{
+  color: aliceblue;
+  position: absolute;
+  top: 150px;
+  left: 510px;
+}
+.email{
+  color: aliceblue;
+  position: absolute;
+  top: 230px;
+  left: 500px;
+}
+.img{
+  background: url(https://tse1.mm.bing.net/th/id/OIP.hIplod-SvuxMcN0sLD0IXwHaEB?rs=1&pid=ImgDetMain&o=7&rm=3);
+  background-size: 100% 100%;
+  width: 290px;
+  height: 230px;
+  border-radius: 20px 20px;
+  position: absolute;
+  left: 60px;
+  top: 1800px;
+}
+.exp{
+  background: url(https://tse2.mm.bing.net/th/id/OIP.oZ49lHK8ekeOab99HaYqqAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3);
+  background-size: 100% 100%;
+  width: 290px;
+  height: 230px;
+  border-radius: 20px 20px;
+  position: absolute;
+  left: 620px;
+  top: 1800px;
+}
+.create{
+  color: aliceblue;
+  font-size: 20px;
+  position: absolute;
+  top: 2100px;
+   left: 30px;
+}
+
+.we{
+  color: aliceblue;
+  font-size: 20px;
+  position: absolute;
+  top: 2100px;
+   left: 600px;
+}
+.hyr{
+color: rgba(240, 248, 255, 0.639);
+font-size: 20px;
+position: absolute;
+top: 1750px;
+left: 40px;
+}
+.raw{
+  background: linear-gradient(90deg,rgb(212, 185, 28),black);
+  width: 90px;
+  height: 5px;
+  border-radius: 20px;
+  position: absolute;
+  top: 110px;
+  left: 30px;
+}
+.rays{
+  background: linear-gradient(90deg,rgb(212, 185, 28),black);
+  width: 90px;
+  height: 5px;
+  border-radius: 20px;
+  position: absolute;
+  top: 760px;
+  left: 50px;
+}
+.roo{
+   background: linear-gradient(90deg,rgb(212, 185, 28),black);
+  width: 100px;
+  height: 5px;
+  border-radius: 20px;
+  position: absolute;
+  top: 1730px;
+  left: 50px;
+}
+.add{
+  background: linear-gradient(90deg,rgb(212, 185, 28),black);
+  width: 110px;
+  height: 5px;
+  border-radius: 20px;
+  position: absolute;
+  top: 2210px;
+  left: 40px;
+}
+.self{
+   background: linear-gradient(90deg,rgb(212, 185, 28),black);
+  width: 110px;
+  height: 5px;
+  border-radius: 20px;
+  position: absolute;
+  top: 2860px;
+  left: 40px;
+}
+.container{
+  width: 1000px;
+  height: 390px;
+border-radius: 30px;
+    border: 2px solid rgba(37, 35, 35, 0.768);
+    position: absolute;
+    left: 40px;
+    top: 2870px;
+}
+.need{
+ color: rgba(240, 248, 255, 0.54);
+ font-size: 17px;
+ position: absolute;
+ top: 2920px;
+ left: 50px;
 }
 input{
-  width: 200px;
-  height: 40px;
-  background-color: white;
-  border-radius: 5px;
+  width: 600px;
+  height: 20px;
   position: absolute;
-  top: 500px;
-  left: 10px;
-  border: none;
-}
- .btn{
-    width: 200px;
-    height: 40px;
-    background-color: rgb(173, 38, 38);
-    color: white;
-    border-radius: 20px;
-    border: none;
-    position: absolute;
-    top: 560px;
-    left: 10px;
-    transition: 2s;
- }
- .btn:hover{
-  background-color: rgb(94, 44, 44);
-  transform: translateY(-10px);
- }
- .p{
-  color: white;
-  position: absolute;
-  top: 300px;
-  left: 10px;
- transition: all 1s;
-  }
-  .p:hover{
-    transform: translateY(-10px);
-  }
-
-
- hr{
-  width: 980px;
-  position: absolute;
-  top: 600px;
-  
- }
- .q{
-  color: white;
-  position: absolute;
-  top: 300px;
+  top: 2990px;
   left: 60px;
-transition: all 1s;
- }
- .q:hover{
+  border-radius: 10px;
+  background: transparent;
+  color: aliceblue;
+   border: 2px solid rgba(37, 35, 35, 0.768);
+   
+}
+/* #send{
+  background-color: rgb(244, 165, 46);
+   width: 160px;
+   height: 50px;
+   border-radius: 20px;
+   position: absolute;
+   top: 3210px;
+   left: 220px;
+   border: none;
+   transition: 1.2s;
+}
+#send:hover{
   transform: translateY(-10px);
- }
- .r{
-  color: white;
+} */
+/* From Uiverse.io by vinodjangid07 */ 
+#seend {
+  width: 140px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(to right,#77530a,#ffd277,#77530a,#77530a,#ffd277,#77530a);
+  background-size: 250%;
+  background-position: left;
+  color: #ffd277;
+position: absolute;
+top: 3210px;
+left: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition-duration: 1s;
+  overflow: hidden;
+}
+
+#seend::before {
   position: absolute;
+  content: "Send Message";
+  color: #ffd277;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 97%;
+  height: 90%;
+  border-radius: 8px;
+  transition-duration: 1s;
+  background-color: rgba(0, 0, 0, 0.842);
+  background-size: 200%;
+}
+
+#seend:hover {
+  background-position: right;
+  transition-duration: 1s;
+}
+
+#seend:hover::before {
+  background-position: right;
+  transition-duration: 1s;
+}
+
+#seend:active {
+  transform: scale(0.95);
+}
+.direct{
+  width: 300px;
+  height: 200px;
+  border: 2px solid rgba(37, 35, 35, 0.768);
+/* background-color: aliceblue; */
+  position: absolute;
+  top: 2940px;
+  left: 690px;
+  border-radius: 20px;
+}
+.directly{
+color: aliceblue;
+font-size: 20px;
+position: absolute;
+top: 2960px;
+left: 710px;
+}
+.he{
+  background: linear-gradient(90deg,gold,black);
+  width: 80px;
+  height: 06px;
+  border-radius: 20px ;
+  position: absolute;
+  top: 2990px;
+  left: 710px;
+}
+ .email{
+   color: rgba(240, 248, 255, 0.77);
+  position: absolute;
+  top: 3020px;
+  left: 710px;
+} 
+.whtsapp{
+ color: rgba(240, 248, 255, 0.77);
+  position: absolute;
+  top: 3060px;
+  left: 710px;
+}
+.note{
+   color: rgba(240, 248, 255, 0.77);
+  position: absolute;
+  font-size: 13px;
+  top: 3090px;
+  left: 710px;
+}
+.port{
+     color: rgba(240, 248, 255, 0.77);
+     position: absolute;
+     top: 3270px;
+     left: 400px;
+}
+#downbtn{
+  font-size: 40px;
+  position: absolute;
+  left: 480px;
   top: 300px;
-  left: 110px;
-  transition: all 1s;
- }
- .r:hover{
-  transform: translateY(-10px);
- }
-.s{
-  color: white;
-  font-size: 10px;
-  position: absolute;
-  top: 200px;
-  left: 200px;
+  border: none;
+  background: transparent;
+  color: aliceblue;
+  scroll-behavior: smooth;
 }
 
-.text{
-  font-size: 15px;
-  color: white;
+
+#upbtn{
+  font-size: 40px;
   position: absolute;
-  top: 605px;
-  left: 400px;
-  
+  left: 480px;
+  top: 2820px;
+  border: none;
+  background: transparent;
+  color: aliceblue;
 }
 
+.changebk{
+    border: 2px solid gold;
+    background: transparent;
+}
     </style>
+    <nav>
+        <ul>Layba</ul>
+        <ul>
+            <li>
+                <a href="#home">home</a>
+                 <a href="#about">about</a>
+                  <a href="#services">services</a>
+                   <a href="#project">project</a>
+                    <a href="#contact">contact</a>
+            </li>
+        </ul>
+    </nav>
+
+   
+    <section id="home">
+    <h1 style="position: absolute; top: 50px; left: 30px;" >Home</h1>
+    <div class="raw"></div>
+    <button class="btn">
+        FullStack.Designer.Motion
+    </button>
+    <h2>Desinger.Developer.Motion</h2>
+    <p>I design premium, bold web experiences using HTML, CSS, JS. <br> I add heavy motion so the site looks rich, dramatic and unforgettable.</p>
+    <button class="down" >
+     Download cv
+    </button>
+
+    <!-- <button class="changebk" >changebackground</button> -->
+
+      <button  id="changebk" onclick="changebg()">changebackground</button>
+
+
+    
+
+     <button class="hire">Hire Me</button> 
+    
+
+    <h3>Skills</h3>
+    <div class="line"></div>
+
+    <div class="ht">HTML</div>
+    <div class="load">
+    <div class="zzz"></div>
+  </div>
+
+   <div class="cs">CSS</div>
+
+  <div class="hey">
+    <div class="bbb"></div>
+  </div> 
+ 
+
+  <div class="js">javaScript</div>
+
+  <div class="hello">
+    <div class="ccc"></div>
+  </div>
+
+  <div class="des">design</div>
+
+  <div class="bye">
+    <div class="eff"></div>
+  </div>
+  
+   
+  </div>
+
+ <div class="box">
+ <div class="expr">Experiences
+
+ </div>
+ <div class="year" >1+Year</div>
+ <div class="loc">Location
+  <div class="kara">Karachi</div>
+ </div>
+ <div class="png" data-tilt data-tilt-glare data-tilt-max-glare="0.8"></div>
+ </div> 
+ 
+
+ <button id="downbtn">⬇</button>
+ <div style="height: 400vh;"></div>
+ <button id="upbtn">⬆</button>                                       
+
+ <script>
+    
+    
+  var down = document.getElementById("downbtn")
+  var up = document.getElementById("upbtn")
+
+  down.addEventListener("click" , ()=>{
+   window.scrollTo({top:document.body.scrollHeight , behavior:"smooth"})
+  })
+  up.addEventListener("click" , ()=>{
+   window.scrollTo({
+       top:0,
+       behavior:"smooth"
+   })
+  })
+
+  
+   </script>
+
+   <script>
+    
+   </script>
 
 
 
@@ -319,62 +1105,682 @@ transition: all 1s;
 
 
 
+    </section>
+
+    <section id="about">
+    <h1 style="position: absolute; top: 700px;left: 50px;">About</h1>
+    <div class="ray"></div>
+    <div class="web">
+      <div class="develop"></div>
+      <div class="ment"></div>
+      <div class="person"></div>
+    </div>
+   <div class="dairy"></div>
+    <div class="parag" style="font-size: 25px;">
+      Hi, I’m [LaybaNoor], a Web Developer with a passion for creating clean and efficient <br> digital   experiences.I enjoy solving problems through code and building websites  that are <br> not only 
+      visually appealing but also easy to use.A web developer is a technology  <br>professional who creates, builds, 
+      and maintainswebsites and web applications.  They <br> write  code using languages  like HTML, CSS,
+      and JavaScript to ensure sites are <br> functional, fast, and user-friendly. Developers typically specialize as front-end <br>
+       (user interface), back-end (server-side logic), or full-stack (both).
+       
+    </div>
+
+
+    
+
+    </section>
+
+     <section id="services">
+    <h1  style="position: absolute; top: 1670px;left: 40px;">Services</h1>
+    <div class="roo"></div>
+    <div class="img"></div>
+    <div class="exp"></div>
+   
+    <div class="create">custome website design we <br> create unique,modern and visually appealing website</div>
+   
+    <div class="we">We specialize in transforming outdatedwebsites
+into <br> modern, high-performing <br> digitalexperiences that
+captivate and <br> convert.  From sleek designs to <br> seamless 
+functionality, we rebuild your site <br> br to reflect your brand’s true potential.</div>
+<div class="hyr"> Here,are ther services i provide to help your build a strong onine presence</div>
+    </section>
+
+     <section id="project">
+    <h1 style="position: absolute;top: 2150px; left: 40px;">Project</h1>
+    <div class="add"></div>
+   <div class="h1">VIP Projects
+    <div class="width"></div>
+   </div>
+   <div class="card">Hover the cards • click to view details</div>
+
+   <div class="a" data-tilt data-tilt-glare data-tilt-max-glare="0.8">
+    <div class="shop">Oudh E-Shop (Premium) </div>
+    
+    <div class="lux">Luxury perfume e-commerce UI — product previews & cart micro-interactions.</div>
+    <button class="html">HTML • CSS • JS • PHP</button>
+   </div>
+
+   <div class="b" data-tilt data-tilt-glare data-tilt-max-glare="0.8">
+    <div class="gall">3D Card Gallery</div>
+    <div class="hover">Interactive 3D hover gallery with tilt & reflection effects.</div>
+    <button class="css">HTML • CSS • JS</button>
+   </div>
+
+   
+
+   
+
+   <div class="d" data-tilt data-tilt-glare data-tilt-max-glare="0.8">
+     
+      <div class="skill">skilldash(Admin)</div>
+      <div class="dn">Dashboard demo with charts & dynamic filters (mock data).</div>
+      <button class="jss">HTML • JS • PHP</button>
+   </div>
+
+   <div class="e" data-tilt data-tilt-glare data-tilt-max-glare="0.8">
+    <div class="utl">C# Utility Suite</div>
+    <div class="coll">Collection of C# console tools: file organizer, data parser.</div>
+    <button class="php">C# • .NET</button>
+   </div>
+    
+    <div class="f" data-tilt data-tilt-glare data-tilt-max-glare="0.8">
+      <div class="land">Landing — Motion HQ</div>
+      <div class="page">One-page marketing site with dramatic scroll reveal & motion.</div>
+      <button class="net">HTML • CSS • JS</button>
+    </div>
+
+
+    </section>
+
+     <section id="contact">
+    <h1 style="position: absolute;top: 2800px; left: 40px;">Contact</h1>
+    <div class="self"></div>
+     <div class="container"></div>
+   
+<div class="need">Need a website or help with design? Message me or use WhatsApp.
+</div>
+
+ <input type="text" placeholder="your name" id="name">
+<input type="number" placeholder="your num" id="num" style="position: absolute; top: 3050px;">
+    <input type="text" placeholder="your msg" id="msg" style="position: absolute; top: 3110px;height: 80px;">
 
 
 
+  <!-- <input type="text" placeholder="Your name"> -->
+  <!-- <input type="text" placeholder="Your email" style="position: absolute; top: 3050px;">
+  <input type="text" placeholder="Message" style="position: absolute;top:3110px; height: 80px;"> -->
+  
+  
 
+  <div class="direct">
 
+  </div>
 
-
-    <div class="a">Smart Grip</div>
-     <div class="line"></div>
-
-
-    <div class="b">Quick Link</div>
-
-    <div class="lineno2"></div>
-
-    <div class="c">Customer Service</div>
-
-    <div class="lineno3"></div>
-
-    <div class="d"><p>Where comfort meets control in <br> every step. We're dedicated to <br> providing premium footwear that <br> combines style, comfort, and <br> functionality.</p></div>
-    <div class="e">Home</div>
-    <div class="f">Men</div>
-    <div class="g">Women</div>
-    <div class="h">Contact</div>
-    <div class="i">Shipping Policy</div>
-    <div class="j">Return Policy</div>
-    <div class="K">Size Guide</div>
-    <div class="l">FAQs</div>
-    <div class="m">Track your Order</div>
-
-    <div class="n">NewsLetter</div>
-    <div class="lineno4"></div>
-
-    <div class="o">Subscribe to our newsletter for the <br>
-       latest updates and offers.
-
+  <div class="directly">Direct</div>
+  <div class="he"></div>
+   <div class="email">Email:laibanoor9660@gmail.com</div>
+    <div class="whtsapp">whtsapp:03172757670</div>
+    <div class="note ">Note:Replace the email above if you want real <br> 
+      replies via the form (or configure server-side).</div>
+  
+      <div class="port">© 2026 laibanoor — Portfolio</div>
     </div>
     
-        <input type="text" placeholder="Your email Address">
-        <p class="text" >© 2025 Smart Grip. All Rights Reserved.</p>
+
+    <button id="seend" onclick="seend()">send message </button>
     
- <button class="btn">Subscribe</button>
- 
- <div class="p">
- <i class="fa-brands fa-facebook" style="font-size: 30px;"></i>
- </div>
 
-     <hr>
-<div class="q">
-  <i class="fa-brands fa-instagram" style="font-size: 30px;"></i>
-</div>
-<div class="r">
-  <i class="fa-brands fa-whatsapp" style="font-size: 30px;"></i>
-</div>
+    
+    </section>
 
-  
 
+   <script>
+    var colors=['darkgray','black']
+
+  var i=0;
+
+  function changebg(){
+    document.body.style.backgroundColor =colors[i]
+    i++;
+    if(i>=colors.length)i=0 
+  }
+
+
+
+
+  </script>
+
+
+
+
+<script>
+        function send(){
+
+
+            var name = document.getElementById("name").value
+            var num = document.getElementById("num").value
+            var msg = document.getElementById("msg").value
+
+            if(name==="" || num==="" || msg===""){
+                alert("please fill all fields!")
+                return
+            }
+
+            var number = "923172757670"
+
+            var text = "Name: " + name + "%0ANumber: " + num + "%0AMessage: " + msg
+
+            window.open("https://wa.me/" + number + "?text=" + text, "_blank" )
+
+
+
+        }
+    </script>
+
+
+
+    <script>
+      var VanillaTilt = (function () {
+'use strict';
+
+/**
+ * Created by Sergiu Șandor (micku7zu) on 1/27/2017.
+ * Original idea: https://github.com/gijsroge/tilt.js
+ * MIT License.
+ * Version 1.8.1
+ */
+
+class VanillaTilt {
+  constructor(element, settings = {}) {
+    if (!(element instanceof Node)) {
+      throw ("Can't initialize VanillaTilt because " + element + " is not a Node.");
+    }
+
+    this.width = null;
+    this.height = null;
+    this.clientWidth = null;
+    this.clientHeight = null;
+    this.left = null;
+    this.top = null;
+
+    // for Gyroscope sampling
+    this.gammazero = null;
+    this.betazero = null;
+    this.lastgammazero = null;
+    this.lastbetazero = null;
+
+    this.transitionTimeout = null;
+    this.updateCall = null;
+    this.event = null;
+
+    this.updateBind = this.update.bind(this);
+    this.resetBind = this.reset.bind(this);
+
+    this.element = element;
+    this.settings = this.extendSettings(settings);
+
+    this.reverse = this.settings.reverse ? -1 : 1;
+    this.resetToStart = VanillaTilt.isSettingTrue(this.settings["reset-to-start"]);
+    this.glare = VanillaTilt.isSettingTrue(this.settings.glare);
+    this.glarePrerender = VanillaTilt.isSettingTrue(this.settings["glare-prerender"]);
+    this.fullPageListening = VanillaTilt.isSettingTrue(this.settings["full-page-listening"]);
+    this.gyroscope = VanillaTilt.isSettingTrue(this.settings.gyroscope);
+    this.gyroscopeSamples = this.settings.gyroscopeSamples;
+
+    this.elementListener = this.getElementListener();
+
+    if (this.glare) {
+      this.prepareGlare();
+    }
+
+    if (this.fullPageListening) {
+      this.updateClientSize();
+    }
+
+    this.addEventListeners();
+    this.reset();
+
+    if (this.resetToStart === false) {
+      this.settings.startX = 0;
+      this.settings.startY = 0;
+    }
+  }
+
+  static isSettingTrue(setting) {
+    return setting === "" || setting === true || setting === 1;
+  }
+
+  /**
+   * Method returns element what will be listen mouse events
+   * @return {Node}
+   */
+  getElementListener() {
+    if (this.fullPageListening) {
+      return window.document;
+    }
+
+    if (typeof this.settings["mouse-event-element"] === "string") {
+      const mouseEventElement = document.querySelector(this.settings["mouse-event-element"]);
+
+      if (mouseEventElement) {
+        return mouseEventElement;
+      }
+    }
+
+    if (this.settings["mouse-event-element"] instanceof Node) {
+      return this.settings["mouse-event-element"];
+    }
+
+    return this.element;
+  }
+
+  /**
+   * Method set listen methods for this.elementListener
+   * @return {Node}
+   */
+  addEventListeners() {
+    this.onMouseEnterBind = this.onMouseEnter.bind(this);
+    this.onMouseMoveBind = this.onMouseMove.bind(this);
+    this.onMouseLeaveBind = this.onMouseLeave.bind(this);
+    this.onWindowResizeBind = this.onWindowResize.bind(this);
+    this.onDeviceOrientationBind = this.onDeviceOrientation.bind(this);
+
+    this.elementListener.addEventListener("mouseenter", this.onMouseEnterBind);
+    this.elementListener.addEventListener("mouseleave", this.onMouseLeaveBind);
+    this.elementListener.addEventListener("mousemove", this.onMouseMoveBind);
+
+    if (this.glare || this.fullPageListening) {
+      window.addEventListener("resize", this.onWindowResizeBind);
+    }
+
+    if (this.gyroscope) {
+      window.addEventListener("deviceorientation", this.onDeviceOrientationBind);
+    }
+  }
+
+  /**
+   * Method remove event listeners from current this.elementListener
+   */
+  removeEventListeners() {
+    this.elementListener.removeEventListener("mouseenter", this.onMouseEnterBind);
+    this.elementListener.removeEventListener("mouseleave", this.onMouseLeaveBind);
+    this.elementListener.removeEventListener("mousemove", this.onMouseMoveBind);
+
+    if (this.gyroscope) {
+      window.removeEventListener("deviceorientation", this.onDeviceOrientationBind);
+    }
+
+    if (this.glare || this.fullPageListening) {
+      window.removeEventListener("resize", this.onWindowResizeBind);
+    }
+  }
+
+  destroy() {
+    clearTimeout(this.transitionTimeout);
+    if (this.updateCall !== null) {
+      cancelAnimationFrame(this.updateCall);
+    }
+
+    this.element.style.willChange = "";
+    this.element.style.transition = "";
+    this.element.style.transform = "";
+    this.resetGlare();
+
+    this.removeEventListeners();
+    this.element.vanillaTilt = null;
+    delete this.element.vanillaTilt;
+
+    this.element = null;
+  }
+
+  onDeviceOrientation(event) {
+    if (event.gamma === null || event.beta === null) {
+      return;
+    }
+
+    this.updateElementPosition();
+
+    if (this.gyroscopeSamples > 0) {
+      this.lastgammazero = this.gammazero;
+      this.lastbetazero = this.betazero;
+
+      if (this.gammazero === null) {
+        this.gammazero = event.gamma;
+        this.betazero = event.beta;
+      } else {
+        this.gammazero = (event.gamma + this.lastgammazero) / 2;
+        this.betazero = (event.beta + this.lastbetazero) / 2;
+      }
+
+      this.gyroscopeSamples -= 1;
+    }
+
+    const totalAngleX = this.settings.gyroscopeMaxAngleX - this.settings.gyroscopeMinAngleX;
+    const totalAngleY = this.settings.gyroscopeMaxAngleY - this.settings.gyroscopeMinAngleY;
+
+    const degreesPerPixelX = totalAngleX / this.width;
+    const degreesPerPixelY = totalAngleY / this.height;
+
+    const angleX = event.gamma - (this.settings.gyroscopeMinAngleX + this.gammazero);
+    const angleY = event.beta - (this.settings.gyroscopeMinAngleY + this.betazero);
+
+    const posX = angleX / degreesPerPixelX;
+    const posY = angleY / degreesPerPixelY;
+
+    if (this.updateCall !== null) {
+      cancelAnimationFrame(this.updateCall);
+    }
+
+    this.event = {
+      clientX: posX + this.left,
+      clientY: posY + this.top,
+    };
+
+    this.updateCall = requestAnimationFrame(this.updateBind);
+  }
+
+  onMouseEnter() {
+    this.updateElementPosition();
+    this.element.style.willChange = "transform";
+    this.setTransition();
+  }
+
+  onMouseMove(event) {
+    if (this.updateCall !== null) {
+      cancelAnimationFrame(this.updateCall);
+    }
+
+    this.event = event;
+    this.updateCall = requestAnimationFrame(this.updateBind);
+  }
+
+  onMouseLeave() {
+    this.setTransition();
+
+    if (this.settings.reset) {
+      requestAnimationFrame(this.resetBind);
+    }
+  }
+
+  reset() {
+    this.onMouseEnter();
+
+    if (this.fullPageListening) {
+      this.event = {
+        clientX: (this.settings.startX + this.settings.max) / (2 * this.settings.max) * this.clientWidth,
+        clientY: (this.settings.startY + this.settings.max) / (2 * this.settings.max) * this.clientHeight
+      };
+    } else {
+      this.event = {
+        clientX: this.left + ((this.settings.startX + this.settings.max) / (2 * this.settings.max) * this.width),
+        clientY: this.top + ((this.settings.startY + this.settings.max) / (2 * this.settings.max) * this.height)
+      };
+    }
+
+    let backupScale = this.settings.scale;
+    this.settings.scale = 1;
+    this.update();
+    this.settings.scale = backupScale;
+    this.resetGlare();
+  }
+
+  resetGlare() {
+    if (this.glare) {
+      this.glareElement.style.transform = "rotate(180deg) translate(-50%, -50%)";
+      this.glareElement.style.opacity = "0";
+    }
+  }
+
+  getValues() {
+    let x, y;
+
+    if (this.fullPageListening) {
+      x = this.event.clientX / this.clientWidth;
+      y = this.event.clientY / this.clientHeight;
+    } else {
+      x = (this.event.clientX - this.left) / this.width;
+      y = (this.event.clientY - this.top) / this.height;
+    }
+
+    x = Math.min(Math.max(x, 0), 1);
+    y = Math.min(Math.max(y, 0), 1);
+
+    let tiltX = (this.reverse * (this.settings.max - x * this.settings.max * 2)).toFixed(2);
+    let tiltY = (this.reverse * (y * this.settings.max * 2 - this.settings.max)).toFixed(2);
+    let angle = Math.atan2(this.event.clientX - (this.left + this.width / 2), -(this.event.clientY - (this.top + this.height / 2))) * (180 / Math.PI);
+
+    return {
+      tiltX: tiltX,
+      tiltY: tiltY,
+      percentageX: x * 100,
+      percentageY: y * 100,
+      angle: angle
+    };
+  }
+
+  updateElementPosition() {
+    let rect = this.element.getBoundingClientRect();
+
+    this.width = this.element.offsetWidth;
+    this.height = this.element.offsetHeight;
+    this.left = rect.left;
+    this.top = rect.top;
+  }
+
+  update() {
+    let values = this.getValues();
+
+    this.element.style.transform = "perspective(" + this.settings.perspective + "px) " +
+      "rotateX(" + (this.settings.axis === "x" ? 0 : values.tiltY) + "deg) " +
+      "rotateY(" + (this.settings.axis === "y" ? 0 : values.tiltX) + "deg) " +
+      "scale3d(" + this.settings.scale + ", " + this.settings.scale + ", " + this.settings.scale + ")";
+
+    if (this.glare) {
+      this.glareElement.style.transform = `rotate(${values.angle}deg) translate(-50%, -50%)`;
+      this.glareElement.style.opacity = `${values.percentageY * this.settings["max-glare"] / 100}`;
+    }
+
+    this.element.dispatchEvent(new CustomEvent("tiltChange", {
+      "detail": values
+    }));
+
+    this.updateCall = null;
+  }
+
+  /**
+   * Appends the glare element (if glarePrerender equals false)
+   * and sets the default style
+   */
+  prepareGlare() {
+    // If option pre-render is enabled we assume all html/css is present for an optimal glare effect.
+    if (!this.glarePrerender) {
+      // Create glare element
+      const jsTiltGlare = document.createElement("div");
+      jsTiltGlare.classList.add("js-tilt-glare");
+
+      const jsTiltGlareInner = document.createElement("div");
+      jsTiltGlareInner.classList.add("js-tilt-glare-inner");
+
+      jsTiltGlare.appendChild(jsTiltGlareInner);
+      this.element.appendChild(jsTiltGlare);
+    }
+
+    this.glareElementWrapper = this.element.querySelector(".js-tilt-glare");
+    this.glareElement = this.element.querySelector(".js-tilt-glare-inner");
+
+    if (this.glarePrerender) {
+      return;
+    }
+
+    Object.assign(this.glareElementWrapper.style, {
+      "position": "absolute",
+      "top": "0",
+      "left": "0",
+      "width": "100%",
+      "height": "100%",
+      "overflow": "hidden",
+      "pointer-events": "none",
+      "border-radius": "inherit"
+    });
+
+    Object.assign(this.glareElement.style, {
+      "position": "absolute",
+      "top": "50%",
+      "left": "50%",
+      "pointer-events": "none",
+      "background-image": `linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)`,
+      "transform": "rotate(180deg) translate(-50%, -50%)",
+      "transform-origin": "0% 0%",
+      "opacity": "0"
+    });
+
+    this.updateGlareSize();
+  }
+
+  updateGlareSize() {
+    if (this.glare) {
+      const glareSize = (this.element.offsetWidth > this.element.offsetHeight ? this.element.offsetWidth : this.element.offsetHeight) * 2;
+
+      Object.assign(this.glareElement.style, {
+        "width": `${glareSize}px`,
+        "height": `${glareSize}px`,
+      });
+    }
+  }
+
+  updateClientSize() {
+    this.clientWidth = window.innerWidth
+      || document.documentElement.clientWidth
+      || document.body.clientWidth;
+
+    this.clientHeight = window.innerHeight
+      || document.documentElement.clientHeight
+      || document.body.clientHeight;
+  }
+
+  onWindowResize() {
+    this.updateGlareSize();
+    this.updateClientSize();
+  }
+
+  setTransition() {
+    clearTimeout(this.transitionTimeout);
+    this.element.style.transition = this.settings.speed + "ms " + this.settings.easing;
+    if (this.glare) this.glareElement.style.transition = `opacity ${this.settings.speed}ms ${this.settings.easing}`;
+
+    this.transitionTimeout = setTimeout(() => {
+      this.element.style.transition = "";
+      if (this.glare) {
+        this.glareElement.style.transition = "";
+      }
+    }, this.settings.speed);
+
+  }
+
+  /**
+   * Method return patched settings of instance
+   * @param {boolean} settings.reverse - reverse the tilt direction
+   * @param {number} settings.max - max tilt rotation (degrees)
+   * @param {startX} settings.startX - the starting tilt on the X axis, in degrees. Default: 0
+   * @param {startY} settings.startY - the starting tilt on the Y axis, in degrees. Default: 0
+   * @param {number} settings.perspective - Transform perspective, the lower the more extreme the tilt gets
+   * @param {string} settings.easing - Easing on enter/exit
+   * @param {number} settings.scale - 2 = 200%, 1.5 = 150%, etc..
+   * @param {number} settings.speed - Speed of the enter/exit transition
+   * @param {boolean} settings.transition - Set a transition on enter/exit
+   * @param {string|null} settings.axis - What axis should be enabled. Can be "x" or "y"
+   * @param {boolean} settings.glare - if it should have a "glare" effect
+   * @param {number} settings.max-glare - the maximum "glare" opacity (1 = 100%, 0.5 = 50%)
+   * @param {boolean} settings.glare-prerender - false = VanillaTilt creates the glare elements for you, otherwise
+   * @param {boolean} settings.full-page-listening - If true, parallax effect will listen to mouse move events on the whole document, not only the selected element
+   * @param {string|object} settings.mouse-event-element - String selector or link to HTML-element what will be listen mouse events
+   * @param {boolean} settings.reset - false = If the tilt effect has to be reset on exit
+   * @param {boolean} settings.reset-to-start - true = On reset event (mouse leave) will return to initial start angle (if startX or startY is set)
+   * @param {gyroscope} settings.gyroscope - Enable tilting by deviceorientation events
+   * @param {gyroscopeSensitivity} settings.gyroscopeSensitivity - Between 0 and 1 - The angle at which max tilt position is reached. 1 = 90deg, 0.5 = 45deg, etc..
+   * @param {gyroscopeSamples} settings.gyroscopeSamples - How many gyroscope moves to decide the starting position.
+   */
+  extendSettings(settings) {
+    let defaultSettings = {
+      reverse: false,
+      max: 15,
+      startX: 0,
+      startY: 0,
+      perspective: 1000,
+      easing: "cubic-bezier(.03,.98,.52,.99)",
+      scale: 1,
+      speed: 300,
+      transition: true,
+      axis: null,
+      glare: false,
+      "max-glare": 1,
+      "glare-prerender": false,
+      "full-page-listening": false,
+      "mouse-event-element": null,
+      reset: true,
+      "reset-to-start": true,
+      gyroscope: true,
+      gyroscopeMinAngleX: -45,
+      gyroscopeMaxAngleX: 45,
+      gyroscopeMinAngleY: -45,
+      gyroscopeMaxAngleY: 45,
+      gyroscopeSamples: 10
+    };
+
+    let newSettings = {};
+    for (var property in defaultSettings) {
+      if (property in settings) {
+        newSettings[property] = settings[property];
+      } else if (this.element.hasAttribute("data-tilt-" + property)) {
+        let attribute = this.element.getAttribute("data-tilt-" + property);
+        try {
+          newSettings[property] = JSON.parse(attribute);
+        } catch (e) {
+          newSettings[property] = attribute;
+        }
+
+      } else {
+        newSettings[property] = defaultSettings[property];
+      }
+    }
+
+    return newSettings;
+  }
+
+  static init(elements, settings) {
+    if (elements instanceof Node) {
+      elements = [elements];
+    }
+
+    if (elements instanceof NodeList) {
+      elements = [].slice.call(elements);
+    }
+
+    if (!(elements instanceof Array)) {
+      return;
+    }
+
+    elements.forEach((element) => {
+      if (!("vanillaTilt" in element)) {
+        element.vanillaTilt = new VanillaTilt(element, settings);
+      }
+    });
+  }
+}
+
+if (typeof document !== "undefined") {
+  /* expose the class to window */
+  window.VanillaTilt = VanillaTilt;
+
+  /**
+   * Auto load
+   */
+  VanillaTilt.init(document.querySelectorAll("[data-tilt]"));
+}
+
+return VanillaTilt;
+
+}());
+    </script>
 </body>
 </html>
